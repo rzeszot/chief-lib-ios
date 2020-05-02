@@ -9,9 +9,8 @@
 /* Begin PBXBuildFile section */
 		2DDD15ED245DE5640093868C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDD15EC245DE5640093868C /* AppDelegate.swift */; };
 		2DDD15EF245DE5640093868C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDD15EE245DE5640093868C /* SceneDelegate.swift */; };
-		2DDD15F1245DE5640093868C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDD15F0245DE5640093868C /* ContentView.swift */; };
+		2DDD15F1245DE5640093868C /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDD15F0245DE5640093868C /* RootView.swift */; };
 		2DDD15F3245DE5650093868C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DDD15F2245DE5650093868C /* Assets.xcassets */; };
-		2DDD15F6245DE5650093868C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DDD15F5245DE5650093868C /* Preview Assets.xcassets */; };
 		2DDD15F9245DE5650093868C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DDD15F7245DE5650093868C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -19,9 +18,8 @@
 		2DDD15E9245DE5640093868C /* AdoptSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdoptSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DDD15EC245DE5640093868C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DDD15EE245DE5640093868C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2DDD15F0245DE5640093868C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2DDD15F0245DE5640093868C /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		2DDD15F2245DE5650093868C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2DDD15F5245DE5650093868C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2DDD15F8245DE5650093868C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2DDD15FA245DE5650093868C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,21 +56,12 @@
 			children = (
 				2DDD15EC245DE5640093868C /* AppDelegate.swift */,
 				2DDD15EE245DE5640093868C /* SceneDelegate.swift */,
-				2DDD15F0245DE5640093868C /* ContentView.swift */,
+				2DDD15F0245DE5640093868C /* RootView.swift */,
 				2DDD15F2245DE5650093868C /* Assets.xcassets */,
 				2DDD15F7245DE5650093868C /* LaunchScreen.storyboard */,
 				2DDD15FA245DE5650093868C /* Info.plist */,
-				2DDD15F4245DE5650093868C /* Preview Content */,
 			);
 			path = AdoptSwiftUI;
-			sourceTree = "<group>";
-		};
-		2DDD15F4245DE5650093868C /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				2DDD15F5245DE5650093868C /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,7 +123,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DDD15F9245DE5650093868C /* LaunchScreen.storyboard in Resources */,
-				2DDD15F6245DE5650093868C /* Preview Assets.xcassets in Resources */,
 				2DDD15F3245DE5650093868C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,7 +136,7 @@
 			files = (
 				2DDD15ED245DE5640093868C /* AppDelegate.swift in Sources */,
 				2DDD15EF245DE5640093868C /* SceneDelegate.swift in Sources */,
-				2DDD15F1245DE5640093868C /* ContentView.swift in Sources */,
+				2DDD15F1245DE5640093868C /* RootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +273,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"AdoptSwiftUI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 9G47WR9NR2;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = AdoptSwiftUI/Info.plist;
@@ -305,7 +293,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"AdoptSwiftUI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 9G47WR9NR2;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = AdoptSwiftUI/Info.plist;
