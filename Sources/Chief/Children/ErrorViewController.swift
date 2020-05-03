@@ -61,7 +61,7 @@ public class ErrorViewController: UIViewController {
 
         subtitleLabel = UILabel()
         subtitleLabel.font = .preferredFont(forTextStyle: .subheadline)
-        subtitleLabel.text = error?.localizedDescription ?? "(unknown)"
+        subtitleLabel.text = error?.localizedDescription
         subtitleLabel.textAlignment = .center
         subtitleLabel.textColor = .secondaryLabel
         subtitleLabel.numberOfLines = 0
@@ -81,7 +81,7 @@ public class ErrorViewController: UIViewController {
         imageView.bottomAnchor.constraint(equalTo: titleLabel.topAnchor, constant: -20).isActive = true
         imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         imageView.widthAnchor.constraint(equalTo: imageView.heightAnchor, multiplier: 1).isActive = true
-        imageView.widthAnchor.constraint(equalToConstant: 150).isActive = true
+        imageView.widthAnchor.constraint(equalToConstant: 100).isActive = true
 
         retryButton = UIButton(type: .custom)
         retryButton.setTitle("Retry", for: .normal)
