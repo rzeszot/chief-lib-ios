@@ -19,7 +19,9 @@ class Animator {
 
     // MARK: -
 
-    public func change(_ state: State, animated: Bool = false) {
+    var state: State = EmptyState()
+
+    func change(_ state: State, animated: Bool = false) {
         queue.append((state: state, animated: animated))
         run()
     }
@@ -34,6 +36,7 @@ class Animator {
         let (state, animated) = queue.removeFirst()
 
         let new = transform(state)
+        self.state = state
 
         if let old = root.children.first {
             let animation = HideAnimation(child: old)
