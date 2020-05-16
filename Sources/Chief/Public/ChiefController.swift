@@ -24,11 +24,6 @@ open class ChiefController: UIViewController {
         view.backgroundColor = .systemBackground
     }
 
-    open override func viewDidLoad() {
-        super.viewDidLoad()
-        animator.change(state, animated: false)
-    }
-
     // MARK: -
 
     public var state: State {
