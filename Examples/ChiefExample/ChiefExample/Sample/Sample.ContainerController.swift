@@ -35,5 +35,9 @@ extension Sample {
             coordinator.appearing()
         }
 
+        func errorViewController(_ vc: ErrorViewController, messageFor error: Error) -> String? {
+            nil
+        }
+
     }
 }

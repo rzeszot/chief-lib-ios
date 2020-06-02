@@ -6,6 +6,13 @@ import UIKit
 
 public protocol ErrorViewControllerDelegate: class {
     func errorViewControllerDidTapRetry(_ vc: ErrorViewController)
+    func errorViewController(_ vc: ErrorViewController, messageFor error: Error) -> String?
+}
+
+extension ErrorViewControllerDelegate {
+    func errorViewController(_ vc: ErrorViewController, messageFor error: Error) -> String? {
+        nil
+    }
 }
 
 public class ErrorViewController: UIViewController {
@@ -43,6 +50,15 @@ public class ErrorViewController: UIViewController {
 
     // MARK: -
 
+    public override func viewDidLoad() {
+        super.viewDidLoad()
+
+        if let error = error {
+            subtitleLabel.text = delegate?.errorViewController(self, messageFor: error)
+        }
+    }
+    
+
     public override func loadView() {
         view = UIView()
         view.backgroundColor = .systemBackground
@@ -61,7 +77,6 @@ public class ErrorViewController: UIViewController {
 
         subtitleLabel = UILabel()
         subtitleLabel.font = .preferredFont(forTextStyle: .subheadline)
-        subtitleLabel.text = error?.localizedDescription
         subtitleLabel.textAlignment = .center
         subtitleLabel.textColor = .secondaryLabel
         subtitleLabel.numberOfLines = 0
