@@ -100,6 +100,7 @@ public class ErrorViewController: UIViewController {
 
         retryButton = UIButton(type: .custom)
         retryButton.setTitle("Retry", for: .normal)
+        retryButton.setTitleColor(view.tintColor, for: .normal)
         retryButton.addTarget(self, action: #selector(retryAction), for: .touchUpInside)
 
         view.addSubview(retryButton)
